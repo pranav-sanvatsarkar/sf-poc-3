@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+endpointApiVersion=35.0
+endpointEnvironment=Production/Developer Edition
+endpointServer=www.salesforce.com
+httpsProtocol=true
+ideVersion=35.0
+keependpoint=false
+metadataFormatVersion=35.0
+namespacePrefix=prnv_light_1
+packageName=unpackaged
+preferToolingDeployment=true
+projectIdentifier=IDE-6410843964713711044
+readTimeout=600
+username=pranav.poc_3@gmail.com

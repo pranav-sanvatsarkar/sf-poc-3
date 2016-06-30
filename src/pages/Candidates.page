@@ -1,0 +1,29 @@
+<apex:page controller="CandidatesController">
+    <apex:form id="candidateForm">
+        <apex:pageBlock title="New Registration">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" rerender="candidateForm" immediate="true" />
+                <apex:commandButton value="Cancel" rerender="candidateForm" immediate="true"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!Candidate.First_Name__c}"/>
+                <apex:inputField value="{!Candidate.Last_Name__c}"/>
+                <apex:inputField value="{!Candidate.Email__c}"/>
+                <apex:selectList value="{!Candidate.Primary_Source__c}" size="1">
+                    <apex:selectOption itemLabel="Social Media" itemValue="Social Media"></apex:selectOption>
+                    <apex:selectOption itemLabel="Consultancy" itemValue="Consultancy"></apex:selectOption>
+                    <apex:selectOption itemLabel="Training Institutes" itemValue="Training Institutes"></apex:selectOption>
+                    <apex:selectOption itemLabel="Reference" itemValue="Reference"></apex:selectOption>
+                    <apex:selectOption itemLabel="Other" itemValue="Other"></apex:selectOption>
+                </apex:selectList>
+                <!--
+                <apex:inputText value="{!Candidate.Primary_Source__c}"/>
+                <apex:inputText value="{!Candidate.Secondary_Source__c}"/>
+                <apex:inputText value="{!Candidate.Other_Source__c}"/>
+-->
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:pageBlock title="Candidates">
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

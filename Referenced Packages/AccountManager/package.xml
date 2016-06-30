@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountManager</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <namespacePrefix>admin_201_1</namespacePrefix>
+    <types>
+        <members>AccountManagerController</members>
+        <members>AccountManagerControllerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountManager</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>Account.Active__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Account.FirstAccountManager</members>
+        <name>FieldSet</name>
+    </types>
+    <version>35.0</version>
+</Package>
